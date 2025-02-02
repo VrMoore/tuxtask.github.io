@@ -1,0 +1,110 @@
+article {
+    display: grid;
+    grid-template-rows: 25vh 75vh;
+    grid-template-areas: 
+    "Welcome"
+    "Content"
+    ;
+    box-sizing: border-box;
+    min-height: fit-content;
+
+    .welcome {
+        grid-area: "Welcome";
+        height: 100%;
+        align-self: center;
+        text-align: center;
+        padding: .6em;
+        h3 {
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 1.4em;
+        }
+        .lines {
+            border: 2px solid black;
+            width: 30%;
+            justify-self: center;
+            margin: .4em;
+        }
+    }
+
+}
+
+.wrapper {
+    grid-area: "Content";
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    gap: 1em;
+    padding: 1em;
+    text-align: center;
+
+    #list_of_apps {
+        width: 70%;
+        height: 60%;
+        border: 2px solid black;
+        background-color: purple;
+        box-shadow: 6px 6px black;
+        border-radius: 15px;
+        transition: 350ms all ease-in-out;
+        
+        a {
+            margin: auto;
+            height: 100%;
+            display: grid ;
+            grid-template-rows: 70% 35%;
+            padding: .4em;
+            text-decoration: none;
+            #box {
+                border-radius: 15px;
+                background-color: white;
+                color: black;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 4em;
+            }
+            p {
+                color: white;
+                height: 100%;
+                padding: .6em;
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+        }
+
+    }
+
+    #list_of_apps:hover {
+        transform: translateY(-20px);
+        transition: 250ms all ease-in-out;
+    }
+}
+
+@media screen and (max-width : 682px) {
+    article {
+        grid-template-rows: 10vh 90vh;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    #list_of_apps {
+        height: 100% !important;
+        width : 60% !important;
+    }
+}
+
+@media screen and (682px < width < 982px) {
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #list_of_apps {
+        width: 75% !important;
+    }
+}

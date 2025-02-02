@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/kanban.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../images/dummy logo.svg" type="image/x-icon">
+    <title>Kanban Boards</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/dummy logo.svg" alt="Dummy Logo" srcset="">
+            <h1><a href="#">TUXTASK</a></h1>
+        </div>
+        <nav>
+            <input type="checkbox" class="toogle-menu">
+            <div class="hamburger"></div>
+            <ul class="menu">
+              <li><a href="../html/dashboard.html">Dashboard</a></li>
+              <li><a href="../html/about.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="kanban_head">
+            <h2>My Kanban</h2>
+        </div>
+        <div class="kanban_apps">
+            <div class="input_field">
+                <input id="input_task" type="text" placeholder="Add kanban" spellcheck="false">
+                <i id="input_button" class="fa-solid fa-plus"></i>
+            </div>
+            <div class="board_container">
+
+                <div class="boards" id="myKanban">
+                    <div class="board_head">
+                        <h3 class="board_heading">MUST DO</h3>
+                        <i id="input_task" class="fa-solid fa-plus"></i>
+                    </div>
+                    <input type="text" class="board_task" draggable="true">
+                    <input type="text" class="board_task" draggable="true">
+                    <input type="text" class="board_task" draggable="true">
+                    <!-- <p class="board_task" draggable="true">Lorem ipsum dolor sit.</p>
+                    <p class="board_task" draggable="true">Lorem ipsum dolor sit.</p>
+                    <p class="board_task" draggable="true">Lorem ipsum dolor sit.</p> -->
+                </div>
+
+                <div class="boards" id="myKanban">
+                    <div class="board_head">
+                        <h3 class="board_heading">LATER</h3>
+                        <i id="input_task" class="fa-solid fa-plus"></i>
+                    </div>
+                    <input type="text" class="board_task" draggable="true">
+                    <input type="text" class="board_task" draggable="true">
+                    <input type="text" class="board_task" draggable="true">
+                </div>
+
+                <div class="boards" id="myKanban">
+                    <div class="board_head">
+                        <h3 class="board_heading">DONE</h3>
+                        <i id="input_task" class="fa-solid fa-plus"></i>
+                    </div>
+                    <input type="text" class="board_task" draggable="true">
+                    <input type="text" class="board_task" draggable="true">
+                    <input type="text" class="board_task" draggable="true">
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <script src="../js/KanbanApps/kanban.js"></script>
+</body>
+</html>
