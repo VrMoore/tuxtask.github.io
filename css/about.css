@@ -7,6 +7,7 @@ main h1 {
 }
 main .dev_cards {
   display: grid;
+  width: 60%;
   grid-template-columns: 40% 60%;
   grid-template-rows: repeat(2, 1fr);
   padding: 14px;
@@ -38,14 +39,23 @@ main .dev_cards ul a {
 main .dev_cards ul li {
   padding: 0.3em;
 }
-
-@media screen and (width > 780px) {
-  .dev_cards {
-    width: 60%;
+@media screen and (546px < width <= 780px) {
+  main .dev_cards {
+    width: 100%;
   }
 }
-@media screen and (width <= 600px) {
-  .dev_cards {
-    background-color: tomato;
+@media screen and (width <= 546px) {
+  main .dev_cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 80%;
+  }
+}
+
+@media screen and (width <= 546px) {
+  main {
+    display: grid;
+    justify-items: center;
   }
 }/*# sourceMappingURL=about.css.map */

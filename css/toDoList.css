@@ -119,6 +119,16 @@ article .wrapper .content_list li:hover {
   transition: 0.4s all ease;
   cursor: pointer;
 }
+@media screen and (496px < width <= 690px) {
+  article .wrapper .content_list li {
+    grid-template-columns: 8% 81% 11%;
+  }
+}
+@media screen and (width <= 496px) {
+  article .wrapper .content_list li {
+    grid-template-columns: 14% 68% 17%;
+  }
+}
 
 @media screen and (width < 480px) {
   .wrapper {
