@@ -1,7 +1,7 @@
 
 # TUXTASK
 
-Tuxtask combines multiple apps into one simple web interface, making it easy to access everything you need in one place. This streamlined setup boosts productivity by eliminating the need to switch between different platforms. With Tuxtask, everything is centralized for maximum efficiency and convenience.
+[Tuxtask](https://vrmoore.github.io/tuxtask.github.io/) combines multiple apps into one simple web interface, making it easy to access everything you need in one place. This streamlined setup boosts productivity by eliminating the need to switch between different platforms. With Tuxtask, everything is centralized for maximum efficiency and convenience.
 
 Look at my other project :
 
